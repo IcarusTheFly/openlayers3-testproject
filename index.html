@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Openlayers 3 Basic Map with AngularJS</title>
+        <link href="css/vendor/ol.css" rel="stylesheet"/>
+        <link href="css/mainStyle.css" rel="stylesheet"/>
+
+        <script src="js/vendor/angular.min.js"></script>
+        <script src="js/vendor/ol-v3.20.1.js"></script>
+        <script src="js/vendor/FileSaver.min.js"></script>
+
+        <script src="js/ng/ngApp.js"></script>
+        <script src="js/ng/ngController.js"></script>
+        <script src="js/ng/ngMap.js"></script>
+        <script src="js/ng/ngLocalStorage.js"></script>
+    </head>
+
+    <body ng-app="ol3App" ng-controller="ol3Controller">
+        <div class="header">
+            <span>{{title}}</span>
+            <button ng-click="showMap=!showMap">Show/Hide Map</button>
+        </div>
+        <ol3-map ng-show="showMap"></ol3-map>
+    </body>
+</html>
